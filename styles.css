@@ -1,0 +1,61 @@
+* { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 16px; margin: 0; }
+        main { width: 100%; max-width: 1170px; margin: 0 auto; }
+        /* Korzystając z modelu Flexbox, stwórz responsywne menu na podstawie listy wypunktowanej.
+        Pojemnik z nawigacją powinien mieć tło koloru #333. Lista wypunktowana nie powinna mieć żadnych punktorów, bez żadnego dopełnienia. Linki niech będą bez podkreślenia, wyśrodkowane, koloru białego, niech zajmują całą dostępną szerokość i mają dopełnienie 10px z każdej ze stron. Po najechaniu na linki, ich tło niech zmieni się na #555.
+        Przy szerokości co najmniej 768px, lista wypunktowana ma przybrać tryb wyświetlania flex, z wyrównaniem jej elementów do lewej strony (flex-start). Elementy listy powinny się powiększać i pomniejszać względem pozostałych na poziomie 1, zaś ich początkowa długość to 0. */
+
+        .navigation {
+            
+            background-color: #333;
+
+        }
+          ul {
+              list-style-type: none;
+              padding: 0;
+          }  
+
+          li    {
+            flex-grow: 1;
+            text-decoration: none;
+            color:white;
+            display: block; 
+            padding:10px;
+          }
+
+            a:hover, a:focus{ 
+                background-color: #555;
+             }
+
+                  a {
+                        color:white;
+                        text-decoration:none;
+                       text-align: center;
+                       display: block;
+                       padding: 10px;
+
+                    }
+
+
+
+                @media screen and (min-width: 768px){
+                    ul  { display:flex;
+                    justify-content: flex-start;
+                }
+                 li {
+                    flex:1 1 0;
+                }
+
+            
+
+            
+
+
+
+
+
+        
+            
+        
+            
+        
+    

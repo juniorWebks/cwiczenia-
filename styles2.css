@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+        body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; }
+        section { background-color:#f1f1f1; padding: 5px; }
+        section h4 { text-align: center; }
+        header { padding: 60px; text-align: center; background-color: #ddd; }
+        aside { background-color: #f1f1f1; padding: 20px; }
+        article { background-color: #fff; padding: 20px; }
+        footer { padding: 20px; text-align: center; background-color: #ddd; }
+        /* Korzystając z modelu Flexbox, do dokumentu dopisz style, które sprawią, że przy szerokości co najmniej 768px, dwa pojemniki - aside i article - ułożą się w dwie kolumny o szerokościach odpowiednio 30% oraz 70%. */
+
+        @media screen and (min-width:768px){
+            .container { display:flex;
+                flex-direction:row;
+
+        }
+
+        .asidegit {
+            flex-basics : 30%;
+
+        }
+        .article {
+            flex-basis: 70%;
+        }
